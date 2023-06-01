@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JDialogFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
+              <Component id="jScrollPane1" min="-2" pref="518" max="-2" attributes="0"/>
+              <EmptySpace pref="145" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace pref="39" max="32767" attributes="0"/>
+              <Component id="jScrollPane1" min="-2" pref="581" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="jTextArea1">
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Comic Sans MS" size="14" style="0"/>
+            </Property>
+            <Property name="rows" type="int" value="5"/>
+            <Property name="text" type="java.lang.String" value="______________Principe de jeu____________________________&#xa;&#xa;-Les cartes de &#xab; 6 qui prend &#xbb; ont 2 valeurs : une valeur num&#xe9;rique &#xa;(de 1 &#xe0; 104) qui indique leur future position dans le jeu, et une valeur&#xa;de 1 &#xe0; 7 &#xab; t&#xea;tes de boeufs &#xbb; ,qui correspond &#xe0; des points de p&#xe9;nalit&#xe9;.&#xa;&#xa;-Le but est de r&#xe9;colter le moins possible de t&#xea;tes de boeufs. Le&#xa;gagnant est celui qui en comptabilise le moins &#xe0; la fin du jeu.&#xa;&#xa;______________Pr&#xe9;paration_______________________________&#xa;&#xa;-Pr&#xe9;parez du papier et un crayon, m&#xe9;langez les cartes et distribuez &#xa;10 cartes &#xe0; chacun. Chaque joueur prend ses cartes en main .&#xa;&#xa;-Former quatre rang&#xe9;es et D&#xe9;posez 4 cartes situ&#xe9;es sur le dessus de&#xa;la pile des cartes non distribu&#xe9;es sur la table, faces visibles. &#xa;Chaque carte repr&#xe9;sente le d&#xe9;but d&#x2019;une s&#xe9;rie, qui, ne doit pas&#xa;comporter plus de 5 cartes en tout. La pile des cartes restantes ne&#xa;sera plus utile avant la prochaine manche.&#xa;&#xa;______________D&#xe9;roulement du jeu&#xa;&#xa;-Tous les joueurs prennent 1 carte de leur jeu pour la d&#xe9;poser face &#xa;cach&#xe9;e devant eux sur la table. Une fois que le dernier s&#x2019;est d&#xe9;cid&#xe9;, &#xa;on retourne ces cartes. Celui qui a d&#xe9;pos&#xe9; la carte la plus faible est&#xa;le premier &#xe0; jouer sa carte dans une des quatre rang&#xe9;es, puis vient le&#xa;tour de celui qui a d&#xe9;pos&#xe9; la deuxi&#xe8;me carte la plus faible et ainsi de &#xa;suite jusqu&#x2019;&#xe0; ce que celui qui a d&#xe9;pos&#xe9; la carte la plus forte de ce tour&#xa;-Les cartes d&#x2019;une s&#xe9;rie sont toujours d&#xe9;pos&#xe9;es les unes &#xe0; c&#xf4;t&#xe9; des&#xa;autres. On r&#xe9;p&#xe8;te le m&#xea;me processus jusqu&#x2019;&#xe0; ce que les 10 cartes&#xa;des joueurs soient &#xe9;puis&#xe9;es.&#xa;&#xa;______________Encaissement des cartes&#xa;&#xa;- Que se passe-t-il lorsqu&#x2019;une s&#xe9;rie est termin&#xe9;e ou lorsqu&#x2019;une carte ne&#xa;va dans aucune s&#xe9;rie ? Dans les deux cas, le joueur qui joue une telle&#xa;&#xa;- R&#xe8;gle n&#xb0;1: &#x201e;Valeurs croissantes&#x201c;&#xa;Les cartes d&#x2019;une s&#xe9;rie doivent toujours se succ&#xe9;der dans l&#x2019;ordre &#xa;croissant de leurs valeurs.&#xa;&#xa;-R&#xe8;gle n&#xb0;2: &#x201e;La plus petite diff&#xe9;rence&#x201c;&#xa;Une carte doit toujours &#xea;tre d&#xe9;pos&#xe9;e dans la s&#xe9;rie o&#xf9; la diff&#xe9;rence &#xa;entre la derni&#xe8;re carte d&#xe9;pos&#xe9;e et la nouvelle est la plus faible.&#xa;&#xa;-R&#xe8;gle n&#xb0;3: &#x201e;S&#xe9;rie termin&#xe9;e&#x201c;&#xa;Une s&#xe9;rie est termin&#xe9;e lorsqu&#x2019;elle compte 5 cartes. Lorsque, d&#x2019;apr&#xe8;s &#xa;la r&#xe8;gle n&#xb0;2, une sixi&#xe8;me carte doit y &#xea;tre d&#xe9;pos&#xe9;e, le joueur qui joue &#xa;cette carte doit ramasser les 5 cartes de la s&#xe9;rie. Sa sixi&#xe8;me carte &#xa;forme alors le d&#xe9;but d&#x2019;une nouvelle s&#xe9;rie&#xa;&#xa;-R&#xe8;gle n&#xb0;4: &#x201e;La carte la plus faible&#x201c;&#xa;Le joueur qui joue une carte si faible qu&#x2019;elle ne peut aller dans aucune&#xa;des s&#xe9;ries doit ramasser toutes les cartes d&#x2019;une s&#xe9;rie de son choix. &#xa;Sa carte &#x201e;faible&#x201c; repr&#xe9;sente alors la premi&#xe8;re carte d&#x2019;une nouvelle s&#xe9;rie.&#xa;&#xa;______________Fin de manche&#xa;&#xa;-Une manche prend fi n lorsque les 10 cartes sont jou&#xe9;es. Chaque &#xa;joueur compte alors ses points n&#xe9;gatifs dans sa pile de t&#xea;tes de boeuf.&#xa;On note le r&#xe9;sultat de chacun des joueurs sur une feuille de papier, &#xa;puis on commence une nouvelle manche. On joue plusieurs manches &#xa;jusqu&#x2019;&#xe0; ce que l&#x2019;un des joueurs ait r&#xe9;uni en tout plus de 66 t&#xea;tes de &#xa;boeuf. Le vainqueur de la partie est alors le joueur qui a le moins de &#xa;t&#xea;tes de boeuf. Avant le d&#xe9;but du jeu, il est bien s&#xfb;r possible de convenir&#xa;d&#x2019;un autre total de points ou d&#x2019;un nombre de manches maximum.&#xa;&#xa;Que le meuilleure gagne."/>
+            <Property name="wrapStyleWord" type="boolean" value="true"/>
+            <Property name="autoscrolls" type="boolean" value="false"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="null"/>
+            </Property>
+            <Property name="caretColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="cc" green="cc" red="cc" type="rgb"/>
+            </Property>
+            <Property name="opaque" type="boolean" value="false"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
